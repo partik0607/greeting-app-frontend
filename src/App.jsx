@@ -11,7 +11,7 @@ function App() {
             return;
         }
         try {
-            const response = await fetch(`http://greating-app-backend.onrender.com/api/greet?name=${name}`);
+            const response = await fetch(`https://greating-app-backend.onrender.com/api/greet?name=${name}`);
             const data = await response.json();
             setGreeting(data.message || data.error);
         } catch (error) {
